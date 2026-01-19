@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Echotopia;
+    src: url('Echotopia-Regular.otf');
+}
+
+*{
+    font-family: Echotopia, Arial, Helvetica, sans-serif;
+}
+
+html{
+    --main-color: white;
+    --main-bgcolor: black;
+    --second-bgcolor: rgb(110, 110, 110);
+    --second-color: red;
+    --border1: 2px solid rgb(110, 110, 110);
+    --border2: 2px solid red;
+}
+html{
+    background-color: rgb(200, 200, 200);
+}
+main{
+    background-color: var(--main-bgcolor);
+    color: var(--main-color);
+    border-radius: 16px;
+    padding: 2%;
+}
+td{
+    border: var(--main-border);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+table{
+    width: 100%;
+    border: none;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5em;
+    background-color: var(--main-bgcolor);
+    color: var(--main-color);
+    font-size: 2.5em;
+    background-image: url("Images/Main.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+
+h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3em;
+
+}
+
+nav a{
+    color: var(--second-color);
+    padding: 1em;
+    text-decoration: none;
+}
+
+
+
+img{
+    max-width: 50%;
+}
+
+div{
+    padding: 2em;
+    text-align: center;
+    border: var(--border2);
+    border-radius: 16px;
+    border-left: none;
+}
+a[href=""]{
+    border-right: var(--border1);
+    border-left: var(--border1);
+    color: var(--main-color)
+}
+/*---------------*/
+.track{
+    background-color: var(--second-bgcolor);
+}
+
+/*--------------------*/
+.Table1{
+    background-color: var(--second-bgcolor);
+}
+.Table2{
+    background-color:darkgray;
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--main-bgcolor);
+    align-items: center;
+    column-gap: 1em;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--second-color);
+    border-radius: 16px;
+    width:100%;
+}
+
+
+#The_Years img{
+    float: left;
+    shape-outside: circle();
+    border-radius: 50%;
+    width: 30%;
+    padding: 2em;
+    padding-right: 6em;
+}
+
+td{
+    font-size: 1.25em;
+}
+
+a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+    transform: scale(1.25);
+    transition: 0.2s;
+}
+i{
+    color: var(--second-color);
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 750px)
+{
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap:1%;
+    }
+    header{
+        width: 100%;
+    }
+    .page_jump{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        row-gap: 1em;
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin:0;
+        align-self: flex-start;
+        max-width: 256px;
+    }
+    
+    main{
+        flex-direction: column;
+        width: 71%;
+    }
+    footer{
+        width: 100%
+    }
+    h2{
+        padding: 0;
+    }
+
+}
+
+@media screen and (min-width: 1000px)
+{
+
+        .The_Teams_Grid, #Schedule{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .Team:hover, .track:hover{
+            transform: translateY(-10px);
+            transition: 0.5s;
+            background-color: rgb(80, 80, 80);
+            transition-timing-function: ease-in-out;
+        }
+        .Team{
+            border: none;
+        }
+        #Schedule{
+            grid-gap: 2em;
+        }
+        .track{
+            border: var(--border2);
+        }
+    
+
+}
+
+@media screen and (min-width: 1300px)
+{
+    #Schedule{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
