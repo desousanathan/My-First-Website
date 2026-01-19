@@ -1,7 +1,7 @@
 # F1 Website Project
 A comprehensive Formula 1 website built as my first web development project using pure HTML and CSS.
 
-📋 Project Overview
+## 📋 Project Overview
 This project showcases the exciting world of Formula 1 racing through a multi-page website. Created as an introduction to web development, it demonstrates fundamental HTML structure and CSS styling without the use of frameworks or JavaScript.
 
 ## ✨ Features
@@ -16,7 +16,7 @@ This project showcases the exciting world of Formula 1 racing through a multi-pa
 
 
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 HTML5: Semantic markup and page structure
 CSS3: Styling, layouts, and visual design
